@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { auth, database } from "../../firebase";
 import { onValue, ref, remove, push, child, set, off } from "firebase/database";
 import {
@@ -8,6 +9,7 @@ import {
   useState,
 } from "react";
 import { useAuth } from "../auth/AuthProvider";
+import AppointmentModel from "../../models/AppointmentModel";
 
 export const AppointmentContext = createContext();
 export const useAppointments = () => useContext(AppointmentContext);
@@ -15,7 +17,8 @@ export const useAppointments = () => useContext(AppointmentContext);
 const addAppointment = async (newAppointment) => {
   const appointmentsRef = ref(database, `appointments/${auth.currentUser.uid}`);
   const id = push(appointmentsRef).key;
-  set(child(appointmentsRef, id), newAppointment);
+  newAppointment.id = id;
+  set(child(appointmentsRef, id), newAppointment.toObject());
 };
 
 const deleteAppointment = async (id) => {
@@ -40,7 +43,6 @@ export default function AppointmentProvider(props) {
   }, []);
 
   useEffect(() => {
-    console.log("loggedIn: " + !!loggedIn);
     if (!loggedIn) {
       clearAppointments();
       return;
@@ -50,14 +52,9 @@ export default function AppointmentProvider(props) {
       database,
       `appointments/${auth.currentUser.uid}`
     );
-    console.log(auth.currentUser.email);
     onValue(appointmentRef, (snapshot) => {
-      const data = snapshot.val();
-      console.log(data);
-      if (data) {
-        setAppointments(
-          Object.keys(data).map((key) => ({ id: key, ...data[key] }))
-        );
+      if (snapshot.exists()) {
+        setAppointments(AppointmentModel.fromSnapshot(snapshot.val()));
       } else {
         clearAppointments();
       }
@@ -65,8 +62,6 @@ export default function AppointmentProvider(props) {
     });
     return () => off(appointmentRef);
   }, [loggedIn]);
-
-  console.log("appointments: ", appointments);
 
   return (
     <AppointmentContext.Provider

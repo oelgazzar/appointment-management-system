@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router";
 import { useAppointments } from "./AppointmentProvider";
 import { useState } from "react";
-import { DateTime } from "luxon";
 import { auth } from "../../firebase";
 import { Link } from "react-router-dom";
+import AppointmentModel from "../../models/AppointmentModel";
 
 export default function NewAppointment() {
   const { addAppointment } = useAppointments();
@@ -17,14 +17,7 @@ export default function NewAppointment() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    addAppointment({
-      reasonForVisit: newAppointment.reasonForVisit,
-      datetime: DateTime.fromFormat(
-        newAppointment.date + newAppointment.time,
-        "yyyy-MM-ddHH:mm"
-      ).toISO(),
-      status: "pending",
-    });
+    addAppointment(new AppointmentModel(newAppointment));
     navigate("/");
   };
 

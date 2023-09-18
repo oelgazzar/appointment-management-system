@@ -1,5 +1,4 @@
-import { useMemo, useState } from "react";
-import { getFormattedDate, isMissedDate } from "../../utilities/date";
+import { useState } from "react";
 import Modal from "../Modal";
 
 const getStatusColorClass = (status) => {
@@ -15,41 +14,32 @@ const getStatusColorClass = (status) => {
   }
 };
 
-export default function Appointment({
-  a: { id, datetime, reasonForVisit, status },
-  onDeleteAppointment,
-}) {
+export default function Appointment({ a, onDeleteAppointment }) {
   const [showCloseButton, setShowCloseButton] = useState(false);
-
-  const formattedDate = useMemo(() => getFormattedDate(datetime), [datetime]);
 
   return (
     <div className="card p-4 mb-4 rounded-1 position-relative">
       <div className="row">
         <div className="col-auto d-flex flex-column pe-4 border-end border-1 border-dark-50 text-center">
           <div className="fs-3 fw-light text-uppercase mb-1">
-            {formattedDate.dayOfMonth}
+            {a.dayOfMonth}
           </div>
-          <div className="fs-5 fw-light text-uppercase mb-1">
-            {formattedDate.dayOfWeek}
-          </div>
-          <div className="fs-6 fw-light text-uppercase mb-1">
-            {formattedDate.time}
-          </div>
+          <div className="fs-5 fw-light text-uppercase mb-1">{a.dayOfWeek}</div>
+          <div className="fs-6 fw-light text-uppercase mb-1">{a.time}</div>
         </div>
         <div className="col d-flex">
           <div className="fs-3 text-uppercase align-self-center ms-4">
-            {reasonForVisit}
+            {a.reasonForVisit}
           </div>
         </div>
       </div>
       <span
         className={
           "position-absolute end-0 bottom-0 m-2 badge " +
-          getStatusColorClass(status)
+          getStatusColorClass(a.status)
         }
       >
-        {status}
+        {a.status}
       </span>
       <button
         className={
@@ -76,7 +66,7 @@ export default function Appointment({
         title="Confirm Delete"
         message="Are sure you want to delete this appointment?"
         id="confirmDeleteAppointmentModal"
-        onConfirm={() => onDeleteAppointment(id)}
+        onConfirm={() => onDeleteAppointment(a.id)}
       />
     </div>
   );
