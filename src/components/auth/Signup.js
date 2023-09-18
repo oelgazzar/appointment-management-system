@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase";
 
@@ -11,12 +12,7 @@ export default function Signup() {
     const email = data.get("email");
     const password = data.get("password");
     try {
-      const userCredential = await createUserWithEmailAndPassword(
-        auth,
-        email,
-        password
-      );
-      console.log(userCredential);
+      await createUserWithEmailAndPassword(auth, email, password);
       navigate("/");
     } catch (err) {
       alert(err.message);
@@ -24,8 +20,12 @@ export default function Signup() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div className="mb-2">
+    <form
+      onSubmit={handleSubmit}
+      className="w-50 mx-auto p-4 border rounded-2 bg-white d-flex flex-column justify-content-center"
+    >
+      <h1 className="text-center h2 mb-4">Sign Up</h1>
+      <div className="mb-4">
         <input
           type="email"
           id="email"
@@ -33,6 +33,8 @@ export default function Signup() {
           placeholder="email"
           className="form-control"
         />
+      </div>
+      <div className="mb-4">
         <input
           type="password"
           id="password"
@@ -40,10 +42,13 @@ export default function Signup() {
           placeholder="password"
           className="form-control"
         />
-        <button type="submit" className="btn btn-success">
-          Signup
-        </button>
       </div>
+      <Link to="/auth/login" className="text-end mb-4">
+        already have an account? login
+      </Link>
+      <button type="submit" className="btn btn-warning mx-auto">
+        Signup
+      </button>
     </form>
   );
 }
