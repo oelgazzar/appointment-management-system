@@ -3,10 +3,10 @@ import AppointmentList from "../appointments/AppointmentList";
 
 export default function Appointments() {
   return (
-    <div className="container mt-4 position-relative">
+    <>
       <Link
         to={"/appointments/new"}
-        className="btn btn-sm rounded-1 btn-warning position-absolute end-0"
+        className="btn btn-sm rounded-1 btn-warning position-absolute end-0 me-2"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -23,6 +23,6 @@ export default function Appointments() {
       <h2 className="text-center mb-4">Your Appointments</h2>
 
       <AppointmentList />
-    </div>
+    </>
   );
 }

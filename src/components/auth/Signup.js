@@ -22,7 +22,12 @@ export default function Signup() {
   };
 
   return (
-    <div className="container mt-4 position-relative">
+    <div
+      className="container mt-4 position-relative mt-4 d-flex flex-column"
+      style={{
+        top: "var(--navbar-height)",
+      }}
+    >
       <form
         onSubmit={handleSubmit}
         className="w-50 mx-auto p-4 border rounded-2 bg-white d-flex flex-column justify-content-center"

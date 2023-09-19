@@ -21,7 +21,7 @@ const rootRoutes = [
         path: "appointments/",
         element: (
           <ProtectedRoute>
-            <Appointments />,
+            <Appointments />
           </ProtectedRoute>
         ),
       },
@@ -29,7 +29,7 @@ const rootRoutes = [
         path: "appointments/new",
         element: (
           <ProtectedRoute>
-            <NewAppointment />,
+            <NewAppointment />
           </ProtectedRoute>
         ),
       },

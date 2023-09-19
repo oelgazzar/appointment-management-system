@@ -8,8 +8,12 @@ export default function Navbar() {
   const { loggedIn } = useAuth();
 
   return (
-    <header className="navbar bg-dark" data-bs-theme="dark">
-      <div className="container">
+    <header
+      className="navbar bg-dark position-fixed top-0 w-100 z-1"
+      style={{ height: "var(--navbar-height)" }}
+      data-bs-theme="dark"
+    >
+      <div className="container-fluid">
         <Link to="/" className="navbar-brand">
           <img src={logo} alt="logo" style={{ height: 35 }} className="me-2" />
           Appointment Management System

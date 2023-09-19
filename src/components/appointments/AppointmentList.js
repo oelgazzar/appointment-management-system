@@ -10,7 +10,7 @@ export default function AppointmentList() {
   }
 
   return appointments && appointments.length > 0 ? (
-    <div className="row row-cols-2">
+    <div className="row row-cols-1 row-cols-xl-2">
       {appointments.map((a, i) => {
         return (
           <div className="col" key={a.id}>
