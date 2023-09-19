@@ -6,25 +6,10 @@ import { useAuth } from "./auth/AuthProvider";
 import Footer from "./Footer";
 import Alert from "./Alert";
 import { useError } from "./error/ErrorProvider";
-import { useEffect } from "react";
 
 export default function Root() {
   const { isAuthStateReady } = useAuth();
-  const [error, pushError] = useError();
-
-  useEffect(() => {
-    let id;
-    if (error) {
-      id = setTimeout(() => {
-        pushError(null);
-      }, 2000);
-    }
-    return () => {
-      if (id) {
-        clearTimeout(id);
-      }
-    };
-  });
+  const [error] = useError();
 
   if (!isAuthStateReady) {
     return <Progress />;

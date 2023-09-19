@@ -5,6 +5,7 @@ import NewAppointment from "../components/appointments/NewAppointment";
 import Login from "../components/auth/Login";
 import ProtectedRoute from "../components/auth/ProtectedRoute";
 import Signup from "../components/auth/Signup";
+import Appointments from "../components/appointments/Appointments";
 
 const rootRoutes = [
   {
@@ -14,9 +15,13 @@ const rootRoutes = [
     children: [
       {
         path: "",
+        element: <Home />,
+      },
+      {
+        path: "appointments/",
         element: (
           <ProtectedRoute>
-            <Home />,
+            <Appointments />,
           </ProtectedRoute>
         ),
       },

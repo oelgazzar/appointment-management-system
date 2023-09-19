@@ -1,17 +1,12 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-import { useNavigate } from "react-router";
-import { useEffect } from "react";
 import { useAuth } from "./AuthProvider";
+import Redirect from "../Redirect";
 
 export default function ProtectedRoute({ children }) {
   const { loggedIn } = useAuth();
-  const navigate = useNavigate();
 
-  useEffect(() => {
-    if (!loggedIn) {
-      navigate("/auth/login");
-    }
-  }, [loggedIn]);
+  if (!loggedIn) {
+    return <Redirect to="/" />;
+  }
 
-  return loggedIn && <>{children}</>;
+  return <>{children}</>;
 }
