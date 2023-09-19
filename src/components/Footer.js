@@ -47,7 +47,10 @@ export default function Footer() {
           </a>
         </li>
         <li className="ms-3">
-          <a className="text-body-secondary" href="#">
+          <a
+            className="text-body-secondary"
+            href="https://www.facebook.com/omarMelgazzar/"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"

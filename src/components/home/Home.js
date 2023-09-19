@@ -2,7 +2,10 @@
 import { Link } from "react-router-dom";
 import { useAuth } from "../auth/AuthProvider";
 import Redirect from "../Redirect";
-import appointmentImg2 from "./appointment.png";
+import appointmentImg from "./appointment.png";
+import easyManageImg from "./easy-manage.jpeg";
+import mailNotificationImg from "./mail-notification.jpeg";
+import adminImg from "./admin.png";
 
 export default function Home() {
   const { loggedIn } = useAuth();
@@ -27,7 +30,42 @@ export default function Home() {
           </div>
         </div>
         <div className="col-6">
-          <img src={appointmentImg2} alt="appointment" className="img-fluid" />
+          <img src={appointmentImg} alt="appointment" className="img-fluid" />
+        </div>
+      </div>
+      <div className="container p-4 text-black-50">
+        <div className="text-center mb-5 row align-items-center">
+          <h2 className="col order-1">Easily Manage Your Appointments</h2>
+          <div className="col">
+            <img
+              className="img-fluid rounded-circle"
+              src={easyManageImg}
+              alt="Easily Manage Your Appointments"
+              style={{ width: 300, height: 300 }}
+            />
+          </div>
+        </div>
+        <div className="text-center mb-5 row align-items-center">
+          <h2 className="col">Get Notification By Emails</h2>
+          <div className="col">
+            <img
+              className="img-fluid rounded-circle"
+              src={mailNotificationImg}
+              alt="Get Notification By Emails"
+              style={{ width: 300, height: 300 }}
+            />
+          </div>
+        </div>
+        <div className="text-center mb-5 row align-items-center">
+          <h2 className="col order-1">Admin Dashboard And Powerful Control</h2>
+          <div className="col">
+            <img
+              className="img-fluid rounded-circle"
+              src={adminImg}
+              alt="dmin Dashboard And Powerful Control"
+              style={{ width: 300, height: 300 }}
+            />
+          </div>
         </div>
       </div>
     </>
