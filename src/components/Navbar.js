@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { signOut } from "firebase/auth";
 import { auth } from "../firebase";
 import { useAuth } from "./auth/AuthProvider";
+import logo from "../logo.png";
 
 export default function Navbar() {
   const { loggedIn } = useAuth();
@@ -10,6 +11,7 @@ export default function Navbar() {
     <header className="navbar bg-dark" data-bs-theme="dark">
       <div className="container">
         <Link to="/" className="navbar-brand">
+          <img src={logo} alt="logo" style={{ height: 35 }} className="me-2" />
           Appointment Management System
         </Link>
 

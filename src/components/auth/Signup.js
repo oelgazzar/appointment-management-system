@@ -2,9 +2,11 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase";
+import { useError } from "../error/ErrorProvider";
 
 export default function Signup() {
   const navigate = useNavigate();
+  const [, pushError] = useError();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -15,7 +17,7 @@ export default function Signup() {
       await createUserWithEmailAndPassword(auth, email, password);
       navigate("/");
     } catch (err) {
-      alert(err.message);
+      pushError(err.message);
     }
   };
 

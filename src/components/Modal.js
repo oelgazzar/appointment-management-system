@@ -23,7 +23,7 @@ export default function Modal({ id, message, title, onConfirm }) {
               data-bs-dismiss="modal"
               onClick={onConfirm}
             >
-              Save changes
+              OK
             </button>
           </div>
         </div>

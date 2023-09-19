@@ -5,10 +5,12 @@ import { auth } from "../../firebase";
 import { useAuth } from "./AuthProvider";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useError } from "../error/ErrorProvider";
 
 export default function Login() {
   const navigate = useNavigate();
   const { loggedIn } = useAuth();
+  const [, pushError] = useError();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -18,7 +20,7 @@ export default function Login() {
     try {
       await signInWithEmailAndPassword(auth, email, password);
     } catch (err) {
-      alert(err.message);
+      pushError(err.message);
     }
   };
 

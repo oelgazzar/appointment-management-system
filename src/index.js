@@ -11,16 +11,20 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
+import ErrorProvider from "./components/error/ErrorProvider";
 
 const router = createBrowserRouter(rootRoutes);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <React.StrictMode>
-    <AuthProvider>
-      <AppointmentProvider>
-        <RouterProvider router={router} />
-      </AppointmentProvider>
-    </AuthProvider>
+    <ErrorProvider>
+      <AuthProvider>
+        <AppointmentProvider>
+          <RouterProvider router={router} />
+        </AppointmentProvider>
+      </AuthProvider>
+    </ErrorProvider>
   </React.StrictMode>
 );
