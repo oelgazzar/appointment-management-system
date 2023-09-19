@@ -17,15 +17,10 @@ export default function Root() {
 
   return (
     <>
+      {error && <Alert className="mx-auto">{error}</Alert>}
+
       <Navbar />
-      <div className="container mt-4">
-        {error && (
-          <Alert className="mx-auto">
-            <p className="mb-0">{error}</p>
-          </Alert>
-        )}
-        <Outlet />
-      </div>
+      <Outlet />
       <Footer />
     </>
   );

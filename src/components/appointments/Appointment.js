@@ -49,7 +49,7 @@ export default function Appointment({ a, onDeleteAppointment }) {
         onMouseOver={() => setShowCloseButton(true)}
         onMouseOut={() => setShowCloseButton(false)}
         data-bs-toggle="modal"
-        data-bs-target="#confirmDeleteAppointmentModal"
+        data-bs-target={"#" + a.id}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -63,10 +63,10 @@ export default function Appointment({ a, onDeleteAppointment }) {
         </svg>
       </button>
       <Modal
+        id={a.id}
         title="Confirm Delete"
         message="Are sure you want to delete this appointment?"
-        id="confirmDeleteAppointmentModal"
-        onConfirm={() => onDeleteAppointment(a.id)}
+        onConfirm={onDeleteAppointment}
       />
     </div>
   );

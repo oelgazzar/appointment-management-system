@@ -11,14 +11,16 @@ export default function AppointmentList() {
 
   return appointments && appointments.length > 0 ? (
     <div className="row row-cols-2">
-      {appointments.map((a, i) => (
-        <div className="col" key={a.id}>
-          <Appointment
-            a={a}
-            onDeleteAppointment={() => deleteAppointment(a.id)}
-          />
-        </div>
-      ))}
+      {appointments.map((a, i) => {
+        return (
+          <div className="col" key={a.id}>
+            <Appointment
+              a={a}
+              onDeleteAppointment={() => deleteAppointment(a.id)}
+            />
+          </div>
+        );
+      })}
     </div>
   ) : (
     <p className="text-center">No Appointments</p>

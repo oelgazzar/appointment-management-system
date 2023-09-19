@@ -22,35 +22,37 @@ export default function Signup() {
   };
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="w-50 mx-auto p-4 border rounded-2 bg-white d-flex flex-column justify-content-center"
-    >
-      <h1 className="text-center h2 mb-4">Sign Up</h1>
-      <div className="mb-4">
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="email"
-          className="form-control"
-        />
-      </div>
-      <div className="mb-4">
-        <input
-          type="password"
-          id="password"
-          name="password"
-          placeholder="password"
-          className="form-control"
-        />
-      </div>
-      <Link to="/auth/login" className="text-end mb-4">
-        already have an account? login
-      </Link>
-      <button type="submit" className="btn btn-warning mx-auto">
-        Signup
-      </button>
-    </form>
+    <div className="container mt-4 position-relative">
+      <form
+        onSubmit={handleSubmit}
+        className="w-50 mx-auto p-4 border rounded-2 bg-white d-flex flex-column justify-content-center"
+      >
+        <h1 className="text-center h2 mb-4">Sign Up</h1>
+        <div className="mb-4">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email"
+            className="form-control"
+          />
+        </div>
+        <div className="mb-4">
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="password"
+            className="form-control"
+          />
+        </div>
+        <Link to="/auth/login" className="text-end mb-4">
+          already have an account? login
+        </Link>
+        <button type="submit" className="btn btn-warning mx-auto">
+          Signup
+        </button>
+      </form>
+    </div>
   );
 }
