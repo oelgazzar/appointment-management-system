@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { auth } from "../firebase";
 import Footer from "./Footer";
 
 export default function Sidebar() {
@@ -10,7 +11,12 @@ export default function Sidebar() {
         paddingTop: "calc(20px + var(--navbar-height))",
       }}
     >
-      <span className="fs-4 px-3">Hi, Omar</span>
+      <span className="fs-4 px-3">
+        Hi,{" "}
+        {(auth.currentUser.displayName &&
+          auth.currentUser.displayName.split(" ")[0]) ||
+          auth.currentUser.email.replace(/@.*/, "")}
+      </span>
       <hr />
       <nav className="nav nav-pills flex-column mb-auto">
         <NavLink

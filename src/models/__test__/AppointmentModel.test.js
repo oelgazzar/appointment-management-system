@@ -1,5 +1,5 @@
 import { DateTime } from "luxon";
-import AppointmentModel from "./AppointmentModel";
+import AppointmentModel from "../AppointmentModel";
 
 describe("instantiation", () => {
   it("should throw error if no `reasonForVisit` provided in instantiation", () => {

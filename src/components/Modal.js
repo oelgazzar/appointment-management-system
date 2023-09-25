@@ -1,6 +1,6 @@
 export default function Modal({ id, message, title, onConfirm }) {
   return (
-    <div className="modal" tabIndex="-1" id={id}>
+    <div className="modal" tabIndex="-1" id={id} data-testid="delete-modal">
       <div className="modal-dialog">
         <div className="modal-content">
           <div className="modal-header">

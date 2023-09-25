@@ -1,0 +1,320 @@
+
+> appointment-management-system@0.1.0 test
+> react-scripts test
+
+  console.log
+    1
+
+      at Object.<anonymous> (src/tests/auth/Login.test.js:15:9)
+
+  console.log
+    1
+
+      at Login (src/components/auth/Login.js:12:11)
+
+  console.log
+    1
+
+      at Login (src/components/auth/Login.js:12:11)
+
+  console.error
+    Error: Uncaught [TypeError: undefined is not iterable (cannot read property Symbol(Symbol.iterator))]
+        at reportException (/home/omar/Code/react/appointment-management-system/node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:66:24)
+        at innerInvokeEventListeners (/home/omar/Code/react/appointment-management-system/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:341:9)
+        at invokeEventListeners (/home/omar/Code/react/appointment-management-system/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+        at HTMLUnknownElementImpl._dispatch (/home/omar/Code/react/appointment-management-system/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+        at HTMLUnknownElementImpl.dispatchEvent (/home/omar/Code/react/appointment-management-system/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+        at HTMLUnknownElement.dispatchEvent (/home/omar/Code/react/appointment-management-system/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
+        at Object.invokeGuardedCallbackDev (/home/omar/Code/react/appointment-management-system/node_modules/react-dom/cjs/react-dom.development.js:4213:16)
+        at invokeGuardedCallback (/home/omar/Code/react/appointment-management-system/node_modules/react-dom/cjs/react-dom.development.js:4277:31)
+        at beginWork$1 (/home/omar/Code/react/appointment-management-system/node_modules/react-dom/cjs/react-dom.development.js:27451:7)
+        at performUnitOfWork (/home/omar/Code/react/appointment-management-system/node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+        at workLoopSync (/home/omar/Code/react/appointment-management-system/node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+        at renderRootSync (/home/omar/Code/react/appointment-management-system/node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+        at performConcurrentWorkOnRoot (/home/omar/Code/react/appointment-management-system/node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+        at flushActQueue (/home/omar/Code/react/appointment-management-system/node_modules/react/cjs/react.development.js:2667:24)
+        at act (/home/omar/Code/react/appointment-management-system/node_modules/react/cjs/react.development.js:2582:11)
+        at /home/omar/Code/react/appointment-management-system/node_modules/@testing-library/react/dist/act-compat.js:63:25
+        at renderRoot (/home/omar/Code/react/appointment-management-system/node_modules/@testing-library/react/dist/pure.js:159:26)
+        at render (/home/omar/Code/react/appointment-management-system/node_modules/@testing-library/react/dist/pure.js:246:10)
+        at Object.<anonymous> (/home/omar/Code/react/appointment-management-system/src/tests/auth/Login.test.js:22:9)
+        at Promise.then.completed (/home/omar/Code/react/appointment-management-system/node_modules/jest-circus/build/utils.js:391:28)
+        at new Promise (<anonymous>)
+        at callAsyncCircusFn (/home/omar/Code/react/appointment-management-system/node_modules/jest-circus/build/utils.js:316:10)
+        at _callCircusTest (/home/omar/Code/react/appointment-management-system/node_modules/jest-circus/build/run.js:218:40)
+        at processTicksAndRejections (node:internal/process/task_queues:95:5)
+        at _runTest (/home/omar/Code/react/appointment-management-system/node_modules/jest-circus/build/run.js:155:3)
+        at _runTestsForDescribeBlock (/home/omar/Code/react/appointment-management-system/node_modules/jest-circus/build/run.js:66:9)
+        at run (/home/omar/Code/react/appointment-management-system/node_modules/jest-circus/build/run.js:25:3)
+        at runAndTransformResultsToJestFormat (/home/omar/Code/react/appointment-management-system/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+        at jestAdapter (/home/omar/Code/react/appointment-management-system/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+        at runTestInternal (/home/omar/Code/react/appointment-management-system/node_modules/jest-runner/build/runTest.js:389:16)
+        at runTest (/home/omar/Code/react/appointment-management-system/node_modules/jest-runner/build/runTest.js:475:34)
+        at Object.worker (/home/omar/Code/react/appointment-management-system/node_modules/jest-runner/build/testWorker.js:133:12) TypeError: undefined is not iterable (cannot read property Symbol(Symbol.iterator))
+        at Login (/home/omar/Code/react/appointment-management-system/src/components/auth/Login.js:14:25)
+        at renderWithHooks (/home/omar/Code/react/appointment-management-system/node_modules/react-dom/cjs/react-dom.development.js:16305:18)
+        at mountIndeterminateComponent (/home/omar/Code/react/appointment-management-system/node_modules/react-dom/cjs/react-dom.development.js:20074:13)
+        at beginWork (/home/omar/Code/react/appointment-management-system/node_modules/react-dom/cjs/react-dom.development.js:21587:16)
+        at HTMLUnknownElement.callCallback (/home/omar/Code/react/appointment-management-system/node_modules/react-dom/cjs/react-dom.development.js:4164:14)
+        at HTMLUnknownElement.callTheUserObjectsOperation (/home/omar/Code/react/appointment-management-system/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)
+        at innerInvokeEventListeners (/home/omar/Code/react/appointment-management-system/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:338:25)
+        at invokeEventListeners (/home/omar/Code/react/appointment-management-system/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+        at HTMLUnknownElementImpl._dispatch (/home/omar/Code/react/appointment-management-system/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+        at HTMLUnknownElementImpl.dispatchEvent (/home/omar/Code/react/appointment-management-system/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+        at HTMLUnknownElement.dispatchEvent (/home/omar/Code/react/appointment-management-system/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
+        at Object.invokeGuardedCallbackDev (/home/omar/Code/react/appointment-management-system/node_modules/react-dom/cjs/react-dom.development.js:4213:16)
+        at invokeGuardedCallback (/home/omar/Code/react/appointment-management-system/node_modules/react-dom/cjs/react-dom.development.js:4277:31)
+        at beginWork$1 (/home/omar/Code/react/appointment-management-system/node_modules/react-dom/cjs/react-dom.development.js:27451:7)
+        at performUnitOfWork (/home/omar/Code/react/appointment-management-system/node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+        at workLoopSync (/home/omar/Code/react/appointment-management-system/node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+        at renderRootSync (/home/omar/Code/react/appointment-management-system/node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+        at performConcurrentWorkOnRoot (/home/omar/Code/react/appointment-management-system/node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+        at flushActQueue (/home/omar/Code/react/appointment-management-system/node_modules/react/cjs/react.development.js:2667:24)
+        at act (/home/omar/Code/react/appointment-management-system/node_modules/react/cjs/react.development.js:2582:11)
+        at /home/omar/Code/react/appointment-management-system/node_modules/@testing-library/react/dist/act-compat.js:63:25
+        at renderRoot (/home/omar/Code/react/appointment-management-system/node_modules/@testing-library/react/dist/pure.js:159:26)
+        at render (/home/omar/Code/react/appointment-management-system/node_modules/@testing-library/react/dist/pure.js:246:10)
+        at Object.<anonymous> (/home/omar/Code/react/appointment-management-system/src/tests/auth/Login.test.js:22:9)
+        at Promise.then.completed (/home/omar/Code/react/appointment-management-system/node_modules/jest-circus/build/utils.js:391:28)
+        at new Promise (<anonymous>)
+        at callAsyncCircusFn (/home/omar/Code/react/appointment-management-system/node_modules/jest-circus/build/utils.js:316:10)
+        at _callCircusTest (/home/omar/Code/react/appointment-management-system/node_modules/jest-circus/build/run.js:218:40)
+        at processTicksAndRejections (node:internal/process/task_queues:95:5)
+        at _runTest (/home/omar/Code/react/appointment-management-system/node_modules/jest-circus/build/run.js:155:3)
+        at _runTestsForDescribeBlock (/home/omar/Code/react/appointment-management-system/node_modules/jest-circus/build/run.js:66:9)
+        at run (/home/omar/Code/react/appointment-management-system/node_modules/jest-circus/build/run.js:25:3)
+        at runAndTransformResultsToJestFormat (/home/omar/Code/react/appointment-management-system/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+        at jestAdapter (/home/omar/Code/react/appointment-management-system/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+        at runTestInternal (/home/omar/Code/react/appointment-management-system/node_modules/jest-runner/build/runTest.js:389:16)
+        at runTest (/home/omar/Code/react/appointment-management-system/node_modules/jest-runner/build/runTest.js:475:34)
+        at Object.worker (/home/omar/Code/react/appointment-management-system/node_modules/jest-runner/build/testWorker.js:133:12)
+
+      20 | test("should display error message when login fails", async () => {
+      21 |   const errorMessage = "invalid email or password";
+    > 22 |   render(<Login />);
+         |         ^
+      23 |   await userEvent.click(screen.getByText(/login/i));
+      24 |   expect(screen.getByText(errorMessage)).toBeInTheDocument();
+      25 | });
+
+      at VirtualConsole.<anonymous> (node_modules/jsdom/lib/jsdom/virtual-console.js:29:45)
+      at reportException (node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:70:28)
+      at innerInvokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:341:9)
+      at invokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+      at HTMLUnknownElementImpl._dispatch (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+      at HTMLUnknownElementImpl.dispatchEvent (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+      at HTMLUnknownElement.dispatchEvent (node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
+      at Object.invokeGuardedCallbackDev (node_modules/react-dom/cjs/react-dom.development.js:4213:16)
+      at invokeGuardedCallback (node_modules/react-dom/cjs/react-dom.development.js:4277:31)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27451:7)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/tests/auth/Login.test.js:22:9)
+
+  console.log
+    1
+
+      at Login (src/components/auth/Login.js:12:11)
+
+  console.log
+    1
+
+      at Login (src/components/auth/Login.js:12:11)
+
+  console.error
+    Error: Uncaught [TypeError: undefined is not iterable (cannot read property Symbol(Symbol.iterator))]
+        at reportException (/home/omar/Code/react/appointment-management-system/node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:66:24)
+        at innerInvokeEventListeners (/home/omar/Code/react/appointment-management-system/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:341:9)
+        at invokeEventListeners (/home/omar/Code/react/appointment-management-system/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+        at HTMLUnknownElementImpl._dispatch (/home/omar/Code/react/appointment-management-system/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+        at HTMLUnknownElementImpl.dispatchEvent (/home/omar/Code/react/appointment-management-system/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+        at HTMLUnknownElement.dispatchEvent (/home/omar/Code/react/appointment-management-system/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
+        at Object.invokeGuardedCallbackDev (/home/omar/Code/react/appointment-management-system/node_modules/react-dom/cjs/react-dom.development.js:4213:16)
+        at invokeGuardedCallback (/home/omar/Code/react/appointment-management-system/node_modules/react-dom/cjs/react-dom.development.js:4277:31)
+        at beginWork$1 (/home/omar/Code/react/appointment-management-system/node_modules/react-dom/cjs/react-dom.development.js:27451:7)
+        at performUnitOfWork (/home/omar/Code/react/appointment-management-system/node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+        at workLoopSync (/home/omar/Code/react/appointment-management-system/node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+        at renderRootSync (/home/omar/Code/react/appointment-management-system/node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+        at recoverFromConcurrentError (/home/omar/Code/react/appointment-management-system/node_modules/react-dom/cjs/react-dom.development.js:25850:20)
+        at performConcurrentWorkOnRoot (/home/omar/Code/react/appointment-management-system/node_modules/react-dom/cjs/react-dom.development.js:25750:22)
+        at flushActQueue (/home/omar/Code/react/appointment-management-system/node_modules/react/cjs/react.development.js:2667:24)
+        at act (/home/omar/Code/react/appointment-management-system/node_modules/react/cjs/react.development.js:2582:11)
+        at /home/omar/Code/react/appointment-management-system/node_modules/@testing-library/react/dist/act-compat.js:63:25
+        at renderRoot (/home/omar/Code/react/appointment-management-system/node_modules/@testing-library/react/dist/pure.js:159:26)
+        at render (/home/omar/Code/react/appointment-management-system/node_modules/@testing-library/react/dist/pure.js:246:10)
+        at Object.<anonymous> (/home/omar/Code/react/appointment-management-system/src/tests/auth/Login.test.js:22:9)
+        at Promise.then.completed (/home/omar/Code/react/appointment-management-system/node_modules/jest-circus/build/utils.js:391:28)
+        at new Promise (<anonymous>)
+        at callAsyncCircusFn (/home/omar/Code/react/appointment-management-system/node_modules/jest-circus/build/utils.js:316:10)
+        at _callCircusTest (/home/omar/Code/react/appointment-management-system/node_modules/jest-circus/build/run.js:218:40)
+        at processTicksAndRejections (node:internal/process/task_queues:95:5)
+        at _runTest (/home/omar/Code/react/appointment-management-system/node_modules/jest-circus/build/run.js:155:3)
+        at _runTestsForDescribeBlock (/home/omar/Code/react/appointment-management-system/node_modules/jest-circus/build/run.js:66:9)
+        at run (/home/omar/Code/react/appointment-management-system/node_modules/jest-circus/build/run.js:25:3)
+        at runAndTransformResultsToJestFormat (/home/omar/Code/react/appointment-management-system/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+        at jestAdapter (/home/omar/Code/react/appointment-management-system/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+        at runTestInternal (/home/omar/Code/react/appointment-management-system/node_modules/jest-runner/build/runTest.js:389:16)
+        at runTest (/home/omar/Code/react/appointment-management-system/node_modules/jest-runner/build/runTest.js:475:34)
+        at Object.worker (/home/omar/Code/react/appointment-management-system/node_modules/jest-runner/build/testWorker.js:133:12) TypeError: undefined is not iterable (cannot read property Symbol(Symbol.iterator))
+        at Login (/home/omar/Code/react/appointment-management-system/src/components/auth/Login.js:14:25)
+        at renderWithHooks (/home/omar/Code/react/appointment-management-system/node_modules/react-dom/cjs/react-dom.development.js:16305:18)
+        at mountIndeterminateComponent (/home/omar/Code/react/appointment-management-system/node_modules/react-dom/cjs/react-dom.development.js:20074:13)
+        at beginWork (/home/omar/Code/react/appointment-management-system/node_modules/react-dom/cjs/react-dom.development.js:21587:16)
+        at HTMLUnknownElement.callCallback (/home/omar/Code/react/appointment-management-system/node_modules/react-dom/cjs/react-dom.development.js:4164:14)
+        at HTMLUnknownElement.callTheUserObjectsOperation (/home/omar/Code/react/appointment-management-system/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)
+        at innerInvokeEventListeners (/home/omar/Code/react/appointment-management-system/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:338:25)
+        at invokeEventListeners (/home/omar/Code/react/appointment-management-system/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+        at HTMLUnknownElementImpl._dispatch (/home/omar/Code/react/appointment-management-system/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+        at HTMLUnknownElementImpl.dispatchEvent (/home/omar/Code/react/appointment-management-system/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+        at HTMLUnknownElement.dispatchEvent (/home/omar/Code/react/appointment-management-system/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
+        at Object.invokeGuardedCallbackDev (/home/omar/Code/react/appointment-management-system/node_modules/react-dom/cjs/react-dom.development.js:4213:16)
+        at invokeGuardedCallback (/home/omar/Code/react/appointment-management-system/node_modules/react-dom/cjs/react-dom.development.js:4277:31)
+        at beginWork$1 (/home/omar/Code/react/appointment-management-system/node_modules/react-dom/cjs/react-dom.development.js:27451:7)
+        at performUnitOfWork (/home/omar/Code/react/appointment-management-system/node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+        at workLoopSync (/home/omar/Code/react/appointment-management-system/node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+        at renderRootSync (/home/omar/Code/react/appointment-management-system/node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+        at recoverFromConcurrentError (/home/omar/Code/react/appointment-management-system/node_modules/react-dom/cjs/react-dom.development.js:25850:20)
+        at performConcurrentWorkOnRoot (/home/omar/Code/react/appointment-management-system/node_modules/react-dom/cjs/react-dom.development.js:25750:22)
+        at flushActQueue (/home/omar/Code/react/appointment-management-system/node_modules/react/cjs/react.development.js:2667:24)
+        at act (/home/omar/Code/react/appointment-management-system/node_modules/react/cjs/react.development.js:2582:11)
+        at /home/omar/Code/react/appointment-management-system/node_modules/@testing-library/react/dist/act-compat.js:63:25
+        at renderRoot (/home/omar/Code/react/appointment-management-system/node_modules/@testing-library/react/dist/pure.js:159:26)
+        at render (/home/omar/Code/react/appointment-management-system/node_modules/@testing-library/react/dist/pure.js:246:10)
+        at Object.<anonymous> (/home/omar/Code/react/appointment-management-system/src/tests/auth/Login.test.js:22:9)
+        at Promise.then.completed (/home/omar/Code/react/appointment-management-system/node_modules/jest-circus/build/utils.js:391:28)
+        at new Promise (<anonymous>)
+        at callAsyncCircusFn (/home/omar/Code/react/appointment-management-system/node_modules/jest-circus/build/utils.js:316:10)
+        at _callCircusTest (/home/omar/Code/react/appointment-management-system/node_modules/jest-circus/build/run.js:218:40)
+        at processTicksAndRejections (node:internal/process/task_queues:95:5)
+        at _runTest (/home/omar/Code/react/appointment-management-system/node_modules/jest-circus/build/run.js:155:3)
+        at _runTestsForDescribeBlock (/home/omar/Code/react/appointment-management-system/node_modules/jest-circus/build/run.js:66:9)
+        at run (/home/omar/Code/react/appointment-management-system/node_modules/jest-circus/build/run.js:25:3)
+        at runAndTransformResultsToJestFormat (/home/omar/Code/react/appointment-management-system/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+        at jestAdapter (/home/omar/Code/react/appointment-management-system/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+        at runTestInternal (/home/omar/Code/react/appointment-management-system/node_modules/jest-runner/build/runTest.js:389:16)
+        at runTest (/home/omar/Code/react/appointment-management-system/node_modules/jest-runner/build/runTest.js:475:34)
+        at Object.worker (/home/omar/Code/react/appointment-management-system/node_modules/jest-runner/build/testWorker.js:133:12)
+
+      20 | test("should display error message when login fails", async () => {
+      21 |   const errorMessage = "invalid email or password";
+    > 22 |   render(<Login />);
+         |         ^
+      23 |   await userEvent.click(screen.getByText(/login/i));
+      24 |   expect(screen.getByText(errorMessage)).toBeInTheDocument();
+      25 | });
+
+      at VirtualConsole.<anonymous> (node_modules/jsdom/lib/jsdom/virtual-console.js:29:45)
+      at reportException (node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:70:28)
+      at innerInvokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:341:9)
+      at invokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+      at HTMLUnknownElementImpl._dispatch (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+      at HTMLUnknownElementImpl.dispatchEvent (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+      at HTMLUnknownElement.dispatchEvent (node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
+      at Object.invokeGuardedCallbackDev (node_modules/react-dom/cjs/react-dom.development.js:4213:16)
+      at invokeGuardedCallback (node_modules/react-dom/cjs/react-dom.development.js:4277:31)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27451:7)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at recoverFromConcurrentError (node_modules/react-dom/cjs/react-dom.development.js:25850:20)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25750:22)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/tests/auth/Login.test.js:22:9)
+
+  console.error
+    The above error occurred in the <Login> component:
+    
+        at Login (/home/omar/Code/react/appointment-management-system/src/components/auth/Login.js:14:33)
+    
+    Consider adding an error boundary to your tree to customize error handling behavior.
+    Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+
+      20 | test("should display error message when login fails", async () => {
+      21 |   const errorMessage = "invalid email or password";
+    > 22 |   render(<Login />);
+         |         ^
+      23 |   await userEvent.click(screen.getByText(/login/i));
+      24 |   expect(screen.getByText(errorMessage)).toBeInTheDocument();
+      25 | });
+
+      at logCapturedError (node_modules/react-dom/cjs/react-dom.development.js:18687:23)
+      at update.callback (node_modules/react-dom/cjs/react-dom.development.js:18720:5)
+      at callCallback (node_modules/react-dom/cjs/react-dom.development.js:13923:12)
+      at commitUpdateQueue (node_modules/react-dom/cjs/react-dom.development.js:13944:9)
+      at commitLayoutEffectOnFiber (node_modules/react-dom/cjs/react-dom.development.js:23391:13)
+      at commitLayoutMountEffects_complete (node_modules/react-dom/cjs/react-dom.development.js:24688:9)
+      at commitLayoutEffects_begin (node_modules/react-dom/cjs/react-dom.development.js:24674:7)
+      at commitLayoutEffects (node_modules/react-dom/cjs/react-dom.development.js:24612:3)
+      at commitRootImpl (node_modules/react-dom/cjs/react-dom.development.js:26823:5)
+      at commitRoot (node_modules/react-dom/cjs/react-dom.development.js:26682:5)
+      at finishConcurrentRender (node_modules/react-dom/cjs/react-dom.development.js:25892:9)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25809:7)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/tests/auth/Login.test.js:22:9)
+
+FAIL src/tests/auth/Login.test.js
+  ✕ should display error message when login fails (142 ms)
+
+  ● should display error message when login fails
+
+    TypeError: undefined is not iterable (cannot read property Symbol(Symbol.iterator))
+
+      12 |   console.log(useNavigate());
+      13 |   const { loggedIn } = useAuth();
+    > 14 |   const [, pushError] = useError();
+         |                         ^
+      15 |
+      16 |   const handleSubmit = async (event) => {
+      17 |     event.preventDefault();
+
+      at Login (src/components/auth/Login.js:14:25)
+      at renderWithHooks (node_modules/react-dom/cjs/react-dom.development.js:16305:18)
+      at mountIndeterminateComponent (node_modules/react-dom/cjs/react-dom.development.js:20074:13)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21587:16)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at recoverFromConcurrentError (node_modules/react-dom/cjs/react-dom.development.js:25850:20)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25750:22)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/tests/auth/Login.test.js:22:9)
+
+[0;33mOne of your dependencies, babel-preset-react-app, is importing the
+"@babel/plugin-proposal-private-property-in-object" package without
+declaring it in its dependencies. This is currently working because
+"@babel/plugin-proposal-private-property-in-object" is already in your
+node_modules folder for unrelated reasons, but it [1mmay break at any time[0;33m.
+
+babel-preset-react-app is part of the create-react-app project, [1mwhich
+is not maintianed anymore[0;33m. It is thus unlikely that this bug will
+ever be fixed. Add "@babel/plugin-proposal-private-property-in-object" to
+your devDependencies to work around this error. This will make this message
+go away.[0m
+  
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 total
+Snapshots:   0 total
+Time:        4.639 s
+Ran all test suites related to changed files.
+
+

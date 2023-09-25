@@ -6,6 +6,7 @@ import Login from "../components/auth/Login";
 import ProtectedRoute from "../components/auth/ProtectedRoute";
 import Signup from "../components/auth/Signup";
 import Appointments from "../components/appointments/Appointments";
+import Profile from "../components/profile/Profile";
 
 const rootRoutes = [
   {
@@ -40,6 +41,14 @@ const rootRoutes = [
       {
         path: "auth/signup",
         element: <Signup />,
+      },
+      {
+        path: "profile",
+        element: (
+          <ProtectedRoute>
+            <Profile />,
+          </ProtectedRoute>
+        ),
       },
     ],
   },

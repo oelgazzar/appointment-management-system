@@ -1,11 +1,15 @@
 import { Link } from "react-router-dom";
 import { signOut } from "firebase/auth";
-import { auth } from "../firebase";
+import { auth, storage } from "../firebase";
 import { useAuth } from "./auth/AuthProvider";
 import logo from "../logo.png";
+import { useEffect, useState } from "react";
+import { getDownloadURL } from "firebase/storage";
+import { ref } from "firebase/storage";
 
 export default function Navbar() {
   const { loggedIn } = useAuth();
+  const [profileImage, setProfileImage] = useState();
 
   return (
     <header
@@ -28,20 +32,22 @@ export default function Navbar() {
                 aria-expanded="false"
               >
                 <img
-                  src="https://github.com/mdo.png"
+                  src={auth.currentUser.photoURL}
                   alt=""
                   width="32"
                   height="32"
                   className="rounded-circle me-2"
                 />
-                <strong>Omar</strong>
+                <strong>{auth.currentUser.displayName}</strong>
               </button>
               <ul className="dropdown-menu dropdown-menu-dark text-small shadow">
                 <li>
                   <button className="dropdown-item">Settings</button>
                 </li>
                 <li>
-                  <button className="dropdown-item">Profile</button>
+                  <Link to="/profile" className="dropdown-item">
+                    Profile
+                  </Link>
                 </li>
                 <li>
                   <hr className="dropdown-divider" />
